@@ -1,7 +1,7 @@
 # A Brief Primer on X-ray Diffraction Crystallography
 
 At the time of writing this project, I am a student in the Department of Physics in Scottish Church College, Kolkata, India, pursuing the B.Sc. Physics (Honours) program under the University of Calcutta.
-I submitted this project as the *tutorial* portion for the Discipline Specific Elective course "Nano materials and Applications" in Semester 6.
+I will be submitting this project for the *tutorial* portion in the Discipline Specific Elective course "Nano materials and Applications" in Semester 6.
 
 Note that this is a project and not a B.Sc. thesis or dissertation.
 
