@@ -5,6 +5,10 @@ I will be submitting this project for the *tutorial* portion in the Discipline S
 
 Note that this is a project and not a B.Sc. thesis or dissertation.
 
+### Building the PDF file
+
+The master document is `main.tex`. Clone the repo and run LuaLaTeX on this file.
+
 ### Attribution
 
 The material of this project is mainly taken from the NPTEL course [*Chemical Crystallography*](https://nptel.ac.in/courses/104106093), taught by Prof. Angshuman Roy Chowdhury, Associate Professor, Department of Chemical Sciences, Indian Institute of Science Education and Research (IISER) Mohali.
