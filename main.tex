@@ -36,13 +36,15 @@ lbl/.default=south
 
 \newcommand{\bfnt}[1]{{\bfseries #1}}
 \newcommand{\ifnt}[1]{{\itshape #1}}
-%\newcommand{\e}[1]{\ensuremath{\mathrm{e}^#1}}
 
 % https://tex.stackexchange.com/a/531829/200495
 \makeatletter
 \gdef\@fpheader{}
 \makeatother
 
+% Package siunitx has deprecated Angstrom.
+% https://tex.stackexchange.com/q/610292/200495
+\DeclareSIUnit\angstrom{\text{\AA}}
 
 \begin{document}
 
