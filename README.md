@@ -18,13 +18,18 @@ The master document is `main.tex`.
 
 To compile the PDF, please follow these steps:
 
- - Clone the repo. Since a lot of images are also indexed in git, you may like to only clone the latest commit on the `main` branch.
+ - Clone the repo. Since a lot of images are also indexed in git, you may like to only clone the latest commit on the `main` branch using:
+ 
+ ```bash
+ git clone --depth=1 <repo_url>
+ ```
+ 
  - Execute `LuaLaTeX` and `biber` in the followng order:
     - `LuaLaTeX` ✕  1
     - `biber` ✕  1
-	- `LuaLaTeX` ✕  3
+    - `LuaLaTeX` ✕  3 (or 4)
 
-Building a proper bibliography requires at least two compilations with `LaTeX` after running `biber`. A third iteration is necessary to properly compile the `tikz` diagrams.
+Building a proper bibliography requires at least two compilations with `LaTeX` after running `biber`. A third iteration is necessary to properly compile the `tikz` diagrams. A fourth iteration may be needed if there are green lines on some pages.
 
 ## License
 
