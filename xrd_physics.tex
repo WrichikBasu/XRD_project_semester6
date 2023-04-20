@@ -344,3 +344,19 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	An even integer is the sum of either all odd or all even integers. Thus, reflections only occur from those lattice planes which have Miller indices $(hk\ell)$ all even or all odd. Planes for which the Miller indices are a mixture of off and even integers will be systematically absent in the X-ray diffraction peaks.
 	
 	Similar result can be derived using the structure factor equation, for body-centred cubic lattice, glide planes and screw axes.
+	
+%*********************************************************************************************
+
+\subsection{Broadening of diffracted beams: the Scherrer equation}
+	
+	Till now, we have studied X-ray diffraction from a geometrical point of view. Incident and reflected beams were represented as perfectly collimated and narrow beams, and reflections occurred only at Bragg angles. This ideal situation is, in no way, the same as the practical situation as X-ray beams have a finite width and may not be perfectly parallel. Broadening of X-ray beams arise due to these instrumental factors. But, more importantly, inevitable line broadening arises from the crystallite size, perfection and state of strain of the specimen. The measurement of such broadening, after accounting for the instrumental factors, can give vital information about the specimen.
+	
+	The Scherrer equation is derived by considering a crystal of finite thickness $t$ perpendicular to the planes of interest, such that $m d){h k \ell} = t.$ Next, we consider interference conditions for incident and reflected beams that are slightly deviated, say by $\delta \theta,$ from the Bragg angle. As we go to higher order reflections, or equivalently, planes with larger Laue indices, the path difference due to this deviated angle adds up to finally result in a destructive interference. The condition for destructive interference for the whole crystal is obtained by pairing up the higher order reflections, and after some approximations, we arrive at the Scherrer equation:%
+%		
+	\begin{equation}
+	\beta = \dfrac{K \lambda}{t \cos \theta}
+	\end{equation}%
+%	
+	where $\beta$ is the full width of the Bragg peak at half the maxima (FWHM), and $K$ is often referred \cite{Klug1974} to as the crystallite shape factor. $K$ depends \cite{Holzwarth2011} on the crystallite shape, the definitions of average crystallite size and width. The structure of Scherrer equation is not affected by these, but the numerical value of $K$ can change appreciably. In the absence of detailed information about the shape of the crystal, $K = 0.9$ is a good approximation.
+	
+	The Scherrer equation becomes particularly useful when studying nanostructures because peak broadening becomes significant \cite{AkankshaUrade2023} when the crystallite size drops to $50-25~\si{nm}.$ At around $\SI{10}{nm},$ peak intensities become weak, and peak broadening becomes significant as peaks often overlap with each other, making it difficult to index and analyze the data.
