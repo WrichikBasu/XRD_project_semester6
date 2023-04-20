@@ -14,6 +14,13 @@
 \usepackage{pifont}
 \usepackage{hhline}
 \usepackage{tikz}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=none
+]{biblatex}
+
+\addbibresource{bibliography.bib}
 
 \usetikzlibrary{ext.paths.ortho,  % -|- and |-| path operations
                 quotes,
@@ -90,18 +97,25 @@ lbl/.default=south
 	
 	\section{Single Crystal X-ray Diffraction}
 	
-	\input{crystal_selection}
+		\input{crystal_selection}
+		
+		\input{goniometer}
 	
-	\input{goniometer}
-
-	\input{scxrd_diffractometer}
+		\input{scxrd_diffractometer}
+		
+		\input{scxrd_detector}
+		
+		\input{how_much_data}
+		
+		\input{scxrd_experimentation}
 	
-	\input{scxrd_detector}
+	\section{Powder X-ray Diffraction}
 	
-	\input{how_much_data}
+		
 	
-	\bibliographystyle{plain}
-	\bibliography{bibliography}
+	%\bibliographystyle{plain}
+	%\bibliography{bibliography}
+	\printbibliography
 		
 
 \end{document}

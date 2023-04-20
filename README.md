@@ -3,18 +3,29 @@
 At the time of writing this project, I am a student in the Department of Physics in Scottish Church College, Kolkata, India, pursuing the B.Sc. Physics (Honours) program under the University of Calcutta.
 I will be submitting this project for the *tutorial* portion in the Discipline Specific Elective course "Nano materials and Applications" in Semester 6.
 
-Note that this is a project and not a B.Sc. thesis or dissertation.
+## Please note:
 
-### Building the PDF file
+ - This is a project and **not** a B.Sc. thesis or dissertation.
+ - I have compiled the files using `LuaLaTeX`. If you would like to get the same output as mine, please use the same engine. Compatibility is not guaranteed on other engines.
+ - The fundamental structure of the document is based on the publication style in the Journal of High Energy Physics. The `jheppub.sty` file takes care of this, and it has been downloaded from the journal website, with a few modifications made by me.
+ - JHEP uses `natbib` with `BibTeX`, which is the standard in most journals. I wanted to go with `BibLaTeX`, however. Hence, I have modified the `jheppub.sty` file to not import the `natbib` package.
+ - Some bibliographic entry types like `@online` are only available in `BibLaTeX`. Hence, the bibliography file will need editing if `BibTeX` is to be used.
+ -  `biber` has been used as the backend to `BibLaTeX`.
 
-The master document is `main.tex`. Clone the repo and run LuaLaTeX on this file.
+## Building the PDF file
 
-### Attribution
+The master document is `main.tex`.
 
-The material of this project is mainly taken from the NPTEL course [*Chemical Crystallography*](https://nptel.ac.in/courses/104106093), taught by Prof. Angshuman Roy Chowdhury, Associate Professor, Department of Chemical Sciences, Indian Institute of Science Education and Research (IISER) Mohali.
+To compile the PDF, please follow these steps:
 
-For other materials, please refer to `bibliography.bib`.
+ - Clone the repo. Since a lot of images are also indexed in git, you may like to only clone the latest commit on the `main` branch.
+ - Execute `LuaLaTeX` and `biber` in the followng order:
+    - `LuaLaTeX` ✕  1
+    - `biber` ✕  1
+	- `LuaLaTeX` ✕  3
 
-### License
+Building a proper bibliography requires at least two compilations with `LaTeX` after running `biber`. A third iteration is necessary to properly compile the `tikz` diagrams.
+
+## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" width="200" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
