@@ -34,3 +34,7 @@ Building a proper bibliography requires at least two compilations with `LaTeX` a
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" width="200" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+## Contribution Guidelines
+
+As mentioned before, this is a project. Therefore, once submitted, the main material of this repo will be frozen, and issues and PRs changing the content will not be entertained. You are, of course, free to clone the repo and make changes to anything and everything in accordance with the terms of the license. PRs fixing any typesetting bug will be looked into, however, as long as it does not change the basic structure of the document (you cannot, for example, change the document class, remove the `jheppub.sty` package or port to `BibTeX` in a pull request).
