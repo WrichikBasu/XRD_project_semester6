@@ -1,16 +1,8 @@
 \subsection{How much data do we have to collect?}
 
-\textbf{Friedel's Law} states that the intensity of diffracted beam from $(hk\ell)$ set of planes and $(\bar{h} \bar{k} \bar{\ell})$ set of planes is equal. Mathematically,%
-%	
-	\begin{equation}
-	I_{hk\ell} = I_{\bar{h} \bar{k} \bar{\ell}}.
-	\end{equation}
-	
-This stems from the fact that the $(hk\ell)$ set of planes is actually the same as the $(\bar{h} \bar{k} \bar{\ell})$ set of planes, with the latter being seen from a different origin. Friedel's Law holds irrespective of whether the crystal is centrosymmetric or not.
-
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.15]{full_sphere.png}
+	\includegraphics[scale=0.12]{full_sphere.png}
 	\caption{\label{fig:full_sphere}Full sphere of data. All of $x$, $y$ and $z$ range from $-\infty$ through $0$ to $+\infty.$}
 \end{figure}
 
@@ -28,21 +20,23 @@ A \textbf{full sphere of data} (figure~\ref{fig:full_sphere}) corresponds to%
 	
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.15]{hemisphere_data.png}
+	\includegraphics[scale=0.12]{hemisphere_data.png}
 	\caption{\label{fig:hemisphere}A hemisphere of data corresponds to the closed region demarcated in green. The lower hemisphere is also equally valid due to Friedel's Law.}
 \end{figure}
 	
 A \textbf{hemisphere of data} (figure~\ref{fig:hemisphere}) implies that one index among $h$, $k$ and $\ell$ will run from $0$ to $+\infty,$ and the other two indices will range from $-\infty$ through $0$ to $+\infty.$
 	
-The maximum \textbf{Laue symmetry} of a particular crystal system, combined with Friedel's law, tells us how much data is sufficient for a particular crystal system.
+The maximum \textbf{Laue symmetry} of a particular crystal system, combined with Friedel's law (eqn.~\eqref{eq:friedel_law}), tells us how much data is sufficient for a particular crystal system.
 
 A \ul{triclinic system}, for instance, has only two possible crystallographic symmetries: $1$ and $\bar{1},$ and hence, the maximum Laue symmetry is $\bar{1}.$  This is basically a centre of inversion symmetry. Therefore, only Friedel's Law applies here, and we have to record only a hemisphere of data.
 
 \begin{figure}
 	\centering
-	\includegraphics[scale=0.15]{one_fourth_sphere1.png}
+	\includegraphics[scale=0.12]{one_fourth_sphere1.png}
 	\caption{\label{fig:one_fourth_sphere}For a monoclinic system, only one-fourth data (the demarcated region) is sufficient.}
 \end{figure}
+
+\clearpage
 
 For a \ul{monoclinic system}, the maximum Laue symmetry is $2/m,$ which is a 2-fold rotation axis, and a mirror plane $m \perp$ the rotation axis. If we consider $y$ to be the unique axis, such that $2 \parallel y$, then we have two sets of reflections:%
 %	
@@ -63,7 +57,7 @@ For a \ul{monoclinic system}, the maximum Laue symmetry is $2/m,$ which is a 2-f
 \draw[ <->, blue]    (e.south) to[bend right=45, "FL" lbl=north] (f1.south);
 \end{tikzpicture}
 %
-\vspace{10ex}        % <--- additional space for image
+\vspace{5ex}        % <--- additional space for image
 %
 \end{center}
 %	
@@ -86,7 +80,7 @@ and%
 \draw[ <->, blue]    (e.south) to[bend right=45, "FL" lbl=north] (f1.south);
 \end{tikzpicture}
 %
-\vspace{10ex}        % <--- additional space for image
+\vspace{5ex}        % <--- additional space for image
 %
 \end{center}
 %
@@ -127,7 +121,7 @@ For an \ul{orthorhombic system}, the maximum Laue symmetry is $mmm \implies m \p
 \draw[ <->, blue]    (h.south) to[bend right=45, "FL" lbl=north] (i.south);
 \draw[ <->, blue]    (k.south) to[bend right=45, "FL" lbl=north] (l.south);
 \end{tikzpicture}
-\vspace{10ex}        % <--- additional space for image
+\vspace{5ex}        % <--- additional space for image
 \end{center}
 %
 and we need to record only one from this set. Thus, the data to be recorded decreases to one-eighth for an orthorhombic system, and we need to only record the region highlighted in figure~\ref{fig:one_eighth_sphere}.
