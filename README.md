@@ -12,7 +12,7 @@ I will be submitting this project for the *tutorial* portion in the Discipline S
  - Some bibliographic entry types like `@online` are only available in `BibLaTeX`. Hence, the bibliography file will need editing if `BibTeX` is to be used.
  -  `biber` has been used as the backend to `BibLaTeX`.
 
-## Building the PDF file
+## Compiling the PDF file
 
 The master document is `main.tex`.
 
@@ -31,6 +31,25 @@ To compile the PDF, please follow these steps:
 
 Building a proper bibliography requires at least two compilations with `LaTeX` after running `biber`. A third iteration is necessary to properly compile the `tikz` diagrams. A fourth iteration may be needed if there are green lines on some pages.
 
+If you are using the terminal, then on Linux, you should execute
+```bash
+lualatex -interaction=nonstopmode main.tex && \
+biber main && \
+lualatex -interaction=nonstopmode main.tex && \
+lualatex -interaction=nonstopmode main.tex && \
+lualatex -interaction=nonstopmode main.tex && \
+lualatex -interaction=nonstopmode main.tex
+```
+
+On Windows, open CMD and execute:
+```
+lualatex -interaction=nonstopmode main.tex && ^
+biber main && ^
+lualatex -interaction=nonstopmode main.tex && ^
+lualatex -interaction=nonstopmode main.tex && ^
+lualatex -interaction=nonstopmode main.tex && ^
+lualatex -interaction=nonstopmode main.tex
+```
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" width="200" src="https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-nc-sa.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
