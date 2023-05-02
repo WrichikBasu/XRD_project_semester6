@@ -23,7 +23,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 %	
 	\begin{align}
 	&\phantom{\implies} \mathrm{P.D.} = n \lambda,\quad n \in \mathbb{Z} \nonumber\\
-	&\implies \boxed{2 d_{hk\ell} \sin \theta = n \lambda}
+	&\implies \boxed{2 d_{hk\ell} \sin \theta = n \lambda} \label{eq:bragg_law}
 	\end{align}
 %	
 	which is Bragg's Law for X-ray diffraction. $n$ is the order of diffraction or reflection.
@@ -45,13 +45,13 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 		\begin{align}
 		\mathrm{P.D.} &= \mathrm{AB - CD}, \nonumber\\
 					  &= a \qty( \cos \alpha_n - \cos \alpha_0 ) \\
-					  &= \va{a} \cdot \qty( \vu{S} - \vu{S_0} ),
+					  &= \va{a} \cdot \qty( \vu{S} - \vu{S}_0 ),
 		\end{align}%
 %		
 	has to be an integer multiple of wavelength for constructive interference.%
 %		
 		\begin{equation}
-		\therefore \boxed{a \qty( \cos \alpha_n - \cos \alpha_0 ) = \va{a} \cdot \qty( \vu{S} - \vu{S_0} ) = n_x \lambda,} \quad n_x \in \mathbb{Z}. \label{eq:1st_laue_eqn}
+		\therefore \boxed{a \qty( \cos \alpha_n - \cos \alpha_0 ) = \va{a} \cdot \qty( \vu{S} - \vu{S}_0 ) = n_x \lambda,} \quad n_x \in \mathbb{Z}. \label{eq:1st_laue_eqn}
 		\end{equation}
 		
 	Eqn.~\eqref{eq:1st_laue_eqn} is the \textbf{first Laue equation}.
@@ -67,8 +67,8 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	Proceeding similarly, we can derive two more equations for diffraction from atom rows along the $y$ and $z$ directions, thereby arriving at the second and third Laue equations:%
 %		
 	\begin{align}
-	\boxed{b \qty( \cos \beta_n - \cos \beta_0 ) = \va{b} \cdot \qty( \vu{S} - \vu{S_0} ) = n_y \lambda,} \quad n_y \in \mathbb{Z}; \label{eq:2nd_laue_eqn} \\[1.5em]
-	\boxed{c \qty( \cos \gamma_n - \cos \gamma_0 ) = \va{c} \cdot \qty( \vu{S} - \vu{S_0} ) = n_z \lambda,} \quad n_z \in \mathbb{Z}. \label{eq:3rd_laue_eqn}
+	\boxed{b \qty( \cos \beta_n - \cos \beta_0 ) = \va{b} \cdot \qty( \vu{S} - \vu{S}_0 ) = n_y \lambda,} \quad n_y \in \mathbb{Z}; \label{eq:2nd_laue_eqn} \\[1.5em]
+	\boxed{c \qty( \cos \gamma_n - \cos \gamma_0 ) = \va{c} \cdot \qty( \vu{S} - \vu{S}_0 ) = n_z \lambda,} \quad n_z \in \mathbb{Z}. \label{eq:3rd_laue_eqn}
 	\end{align}
 	
 	For constructive interference to simultaneously occur from all the three atom rows in the three directions, all three Laue equations must be satisfied simultaneously. This is geometrically equivalent to three Laue cones intersecting at some points. Diffraction will only occur along those directions in which three Laue cones intersect.
@@ -216,6 +216,24 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	
 %******************************************************************************************************
 
+\subsection{Bragg's Law in vector notation}
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.2]{bragg_law_vector.png}
+	\caption{\label{fig:bragg_law_vector}$\vu{S}_0$ is a unit vector in the direction of the incoming wave, while $\vu{S}$ is a unit vector in the direction of the reflected wave. $\vu{G}_{hk\ell}$ is a unit vector in the direction of the reciprocal lattice vector $\va{G}_{hk\ell}.$}
+\end{figure}
+
+Bragg's Law can also be stated in vector form. Referring to figure~\ref{fig:bragg_law_vector}, the vector $(\vu{S} - \vu{S}_0) \parallel \va{G}_{hk\ell}.$ Also, $\abs{ \vu{S} - \vu{S}_0 } = 2 \sin \theta$ and $\abs{\va{G}_{hk\ell}} = 1 / d_{hk\ell}.$ Thus, from Bragg's Law (eqn.~\eqref{eq:bragg_law}), the ratio of these two is simply $\lambda,$ i.e.%
+%
+\begin{equation}
+\boxed{\dfrac{\vu{S} - \vu{S}_0}{\lambda} = \va{G}_{hk\ell}.} \label{eq:bragg_law_vector}
+\end{equation}
+
+This the vector form of Bragg's Law.
+
+%******************************************************************************************************
+
 \subsection{Structure Factor, Friedel's Law and Centrosymmetry in X-ray Diffraction}
 
 	The atomic scattering factor is given by%
@@ -256,7 +274,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 				  &= \va{r}_1 \vdot ( \vu{S} - \vu{S}_0 ).
 	\end{align}
 	
-	$\because$ Bragg's Law is satisfied, we can write using eqn.~XXX,%
+	$\because$ Bragg's Law is satisfied, we can write using eqn.~\eqref{eq:bragg_law_vector},%
 %		
 	\begin{align}
 	&\phantom{\implies} ( \vu{S} - \vu{S}_0 ) = \lambda \va{G}_{hk\ell} \nonumber\\
