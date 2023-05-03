@@ -168,7 +168,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	One expression that satisfies this condition is%
 %	
 	\begin{equation}
-	\va{g}_1 = 2\pi \dfrac{\va{a}_2 \cross \va{a}_3}{\qty[ \va{a}_1 ~ \va{a}_2 ~ \va{a}_3 ]}
+	\va{g}_1 = 2\pi \dfrac{\va{a}_2 \cross \va{a}_3}{\qty[ \va{a}_1 ~ \va{a}_2 ~ \va{a}_3 ]} \label{eq:g_from_a}
 	\end{equation}%
 %	
 	and so on.
@@ -214,6 +214,39 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	
 	Ewald's sphere, thus, helps us to geometrically understand Laue's condition and the unification of Bragg's Law and Laue's condition.
 	
+%******************************************************************************************************
+
+\subsection*{A note of caution on notation and the missing $2\pi$ factor}
+
+X-ray diffraction, though developed by physicists, is now widely used in chemistry for characterization of crystals. Different books use different notations for the reciprocal lattice vectors. In table~\ref{tab:notations}, we have compiled a list of such notations. We will strictly stick to the notations we have been using till now in all subsequent discussions. The list is provided for the ease of understanding of the reader.
+
+Books and articles on X-ray diffraction written from the perspective of crystallography often omit~\cite[chapter~5]{Waseda2011} a factor of $2\pi$ in equations. Thus, the length of the reciprocal lattice vector $\va{G}_{hk\ell} = 2\pi / d_{hk\ell},$ the radius of the Ewald sphere $(=\abs*{\va{k}} = \abs*{\va{k}'} = 2\pi / \lambda),$ and equations \eqref{eq:relation_g_a}, \eqref{eq:g_from_a}, are all devoid of the $2\pi$ factor in crystallography. Since we want to preserve the structure of formulae that is used in crystallography if we have to discuss X-ray diffraction, the $2\pi$ factor will be omitted in our subsequent discussions.
+
+\begin{table}
+
+	\centering
+	
+	\caption{\label{tab:notations}Equivalent notations used in crystallography.}
+	\begin{tabular}{|c|C|C|}
+		
+		\hline
+	
+		Quantity & \multicolumn{1}{c|}{\makecell{Notation\\we have used}} & \multicolumn{1}{c|}{\makecell{Equivalent notations\\used elsewhere}} \\
+		
+		\hhline{|=|=|=|}
+		
+		\makecell{Reciprocal lattice\\translation vector} & \va{G}, \va{G}_{hk\ell} & \va{d}^*_{hk\ell}~\text{\cite{Hammond2015}},\ \va{H}_{hk\ell}~\text{\cite{Waseda2011}} \\
+		
+		\hline
+		
+		\makecell{Basis vectors in\\reciprocal lattice} & \va{g}_1, \va{g}_2, \va{g}_3 & \makecell{\displaystyle \Tstrut \va{b}_1, \va{b}_2, \va{b}_3~\text{\cite{Kittel2005,Waseda2011}}\\[0.6em]\va{a}^*, \va{b}^*, \va{c}^*~\text{\cite{Hammond2015}}.}\\
+		
+		\hline
+	
+	\end{tabular}
+
+\end{table}
+
 %******************************************************************************************************
 
 \subsection{Bragg's Law in vector notation}
