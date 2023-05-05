@@ -2,7 +2,7 @@
 
 Max von Laue discovered the phenomena of diffraction of X-rays by crystals, for which he was awarded the Nobel Prize in Physics in 1914. Laue viewed the three-dimensional periodic arrangement of atoms in a crystal as a 3D diffraction grating, and thereby derived a condition which needs to be satisfied for the diffraction of X-rays to take place.
 
-Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ray diffraction. Lawrence Bragg, in contrast to Laue's work, viewed the layers (planes) of atoms in the crystal lattice as reflecting surfaces, and X-ray beams reflecting off consecutive planes would interfere constructively if a certain condition was satisfied. This theory is not true in the physical sense -- planes of atoms do not reflect X-rays as such -- but it is correct in the geometrical sense, and we can arrive at Bragg's Law if we start from Laue's condition. The Braggs were jointly awarded the Nobel prize in Physics in 1915 for their work in X-ray crystallography.
+Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ray diffraction. Lawrence Bragg, in contrast to Laue's work, viewed the layers (planes) of atoms in the crystal lattice as reflecting surfaces, and X-ray beams reflecting off consecutive planes would interfere constructively if a certain condition was satisfied. This theory is not true in the physical sense -- planes of atoms do not reflect X-rays as such -- but it is correct in the geometrical sense, and we can arrive at Bragg's Law if we start from Laue's condition. The Braggs were jointly awarded the Nobel Prize in Physics in 1915 for their work in X-ray crystallography.
 
 \subsection{Bragg's Analysis}
 	
@@ -35,7 +35,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	\begin{figure}
 	\centering
 	\includegraphics[scale=0.17]{laue_analysis.png}
-	\caption{\label{fig:laue_analysis}Diffraction from a lattice row along the $x$ axis. The incident and diffracted beams make angles $\alpha_0$ and $\alpha_n$ respectively with the lattice row. $\vec{a}$ is the lattice translation vector. Adapted from \cite{Hammond2015}.}
+	\caption{\label{fig:laue_analysis}Diffraction from a lattice row along the $x$ axis~\cite{Hammond2015}. The incident and diffracted beams make angles $\alpha_0$ and $\alpha_n$ respectively with the lattice row. $\vec{a}$ is the lattice translation vector.}
 	\end{figure}
 	
 	Consider a simple crystal with one atom as the basis, as shown in figure~\ref{fig:laue_analysis}. The atoms are regarded as the scattering centres from which the diffraction takes place. $\hat{S_0}$ and $\hat{S}$ are two unit vectors in the direction of the incident and diffracted beam, respectively. The lattice spacing is $a$.
@@ -81,7 +81,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	\begin{figure}
 	\centering
 	\includegraphics[width=\textwidth]{reciprocal_lattice.png}
-	\caption{\label{fig:reciprocal_lattice}A plane wavefront with wavevector $\va{k}$ reaches a crystal, and is diffracted by an atom at point $P.$ We observe the diffracted beam, with wavevector $\va{k'}$, from point $B.$ Figure adapted from \cite{Harbola2021}.}
+	\caption{\label{fig:reciprocal_lattice}A plane wavefront with wavevector $\va{k}$ reaches a crystal, and is diffracted by an atom at point $P.$ We observe the diffracted beam, with wavevector $\va{k'}$, from point $B.$~\cite{Harbola2021}.}
 	\end{figure}
 
 	Consider the situation shown in figure~\ref{fig:reciprocal_lattice}. The source of X-rays is very far away from the crystal; hence, the wavefront reaching the crystal can be considered to be a plane wavefront. We observe from point $B.$
@@ -173,7 +173,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 %	
 	and so on.
 	
-	Returning to Eqn.~\eqref{eq:net_I}, substituting eqn.~\eqref{eq:fourier_rho}, we have%
+	Returning to eqn.~\eqref{eq:net_I}, substituting eqn.~\eqref{eq:fourier_rho}, we have%
 %	
 	\begin{align}
 	I &\propto \dfrac{A_0^2}{R'^2} \abs{ \sum_{\va{G}} \int_V \dd[3]{r} \rho_{\va{G}} ~ \e{ i (\va{G} - \va{\kappa}) \vdot \va{r} } }  ^2 \nonumber \\[1em]
@@ -192,7 +192,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	\boxed{\va{\kappa} = \va{G}}
 	\end{equation}%
 %	
-	i.e. when the reciprocal space lattice translation vector = scattering vector. This is known as \bfnt{Laue's condition} for X-ray diffraction.
+	i.e.\ when the reciprocal space lattice translation vector = scattering vector. This is known as \bfnt{Laue's condition} for X-ray diffraction.
 	
 	As a parting note, it should be mentioned that the vector $\va{G}_{hk\ell},$ written as in eqn.~\eqref{eq:reci_lattice_vec}, is perpendicular to the plane whose Miller indices are given by $(h k \ell).$
 		
@@ -208,7 +208,7 @@ Sir William Henry Bragg and William Lawrence Bragg furthered the physics of X-ra
 	
 	Refer to figure~\ref{fig:ewald_sphere}. In 3D reciprocal space, each point $(h, k, \ell)$ denotes a particular plane in real space with Miller indices $(hk\ell).$ The vector $\overrightarrow{BO} \equiv \va{k}$ is the wave vector of the incident X-ray beam. A sphere is drawn with the tail of the incident wave vector (point $B$) as the origin, and with a radius~$= \abs*{\va{k}} = \frac{2\pi}{\lambda}.$ This sphere, shown in blue, is Ewald's sphere or the reflecting sphere. Note that the tip of the arrow is taken as the origin of the coordinate system.
 	
-	In elastic scattering, the wave vector of the diffracted beam will have the same length as that of the incident wave vector, i.e. $\abs*{\va{k}'} = \abs*{\va{k}}.$  Therefore, \textcolor{red}{any point on the surface of the sphere will denote a set of planes that satisfy Bragg's Law}.
+	In elastic scattering, the wave vector of the diffracted beam will have the same length as that of the incident wave vector, i.e.\ $\abs*{\va{k}'} = \abs*{\va{k}}.$  Therefore, \textcolor{red}{any point on the surface of the sphere will denote a set of planes that satisfy Bragg's Law}.
 	
 	Consider the point $A(h_1, k_1, \ell_1).$ It lies on the surface of the sphere, and hence, the set of planes with Miller indices $(h_1 k_1 \ell_1)$ will satisfy Bragg's Law. $\overrightarrow{BA}$ will be the wave vector of the diffracted beam, and $\angle ABO = 2\theta,$ where $\theta$ is the Bragg angle for this particular set of planes. The scattered wave vector $\va{\kappa}$ will be, in this case, $\overrightarrow{AO},$ and, due to Laue's condition, this is the same as the reciprocal lattice vector $\va{G}.$ Thus, we may visualize the incident beam hitting the crystal planes at the point $B,$ and the planes are oriented such that $AO$ is perpendicular to them.
 	
@@ -263,7 +263,7 @@ Bragg's Law can also be stated in vector form. Referring to figure~\ref{fig:brag
 \colorboxed{red}{\dfrac{\vu{S} - \vu{S}_0}{\lambda} = \va{G}_{hk\ell}.} \label{eq:bragg_law_vector}
 \end{equation}
 
-This the vector form of Bragg's Law.
+This is the vector form of Bragg's Law.
 
 %******************************************************************************************************
 
@@ -275,7 +275,7 @@ This the vector form of Bragg's Law.
 	f = \dfrac{\text{Amplitude scattered by atom}}{\text{Amplitude scattered by single electron}}.
 	\end{equation}
 	
-	At zero scattering angle, all the scattered waves are in phase and the scattered amplitude is the simple sum of the contribution from all $Z$ electrons, i.e. $f = Z$. As the scattering angle increases, $f$ falls below $Z$ because of the increasingly destructive interference effects between the $Z$ scattered waves.
+	At zero scattering angle, all the scattered waves are in phase and the scattered amplitude is the simple sum of the contribution from all $Z$ electrons, i.e.\ $f = Z$. As the scattering angle increases, $f$ falls below $Z$ because of the increasingly destructive interference effects between the $Z$ scattered waves.
 
 	The scattering amplitude of a unit cell is determined by summing $f$ from all the atoms in a unit cell to all the atoms in a basis. The summation must take into account the path or phase differences between the scattered wave, and is given by the dimensionless structure factor:%
 %	
@@ -348,13 +348,13 @@ This the vector form of Bragg's Law.
 %	
 	Therefore, for a centrosymmetric crystal, the diffraction pattern is also centrosymmetric.
 	
-	It can, in fact, be shown that except in the case of anomalous scattering, \textcolor{red}{even if a crystal is not centrosymmetric (i.e. does not possess a centre of inversion symmetry), the diffraction pattern will still always be centrosymmetric}. This is known as \bfnt{Friedel's Law} and is mathematically written as%
+	It can, in fact, be shown that except in the case of anomalous scattering, \textcolor{red}{even if a crystal is not centrosymmetric (i.e.\ does not possess a centre of inversion symmetry), the diffraction pattern will still always be centrosymmetric}. This is known as \bfnt{Friedel's Law} and is mathematically written as%
 %	
 	\begin{equation}
 	\colorboxed{red}{I_{hk\ell} = I_{\bar{h} \bar{k} \bar{\ell}}.} \label{eq:friedel_law}
 	\end{equation}
 	
-	The presence of a centre of symmetry in the diffraction pattern means that non- centrosymmetric crystals cannot be distinguished from those with a centre of symmetry. There are eleven centrosymmetric point groups and hence, eleven symmetries which \\diffraction patterns can possess. These are called the eleven \bfnt{Laue groups}. Only Laue groups can be distinguished from a X-ray diffraction pattern. Thus, the phase information in the structure factor is lost when we measure intensity of the diffracted beam.
+	The presence of a centre of symmetry in the diffraction pattern means that non- centrosymmetric crystals cannot be distinguished from those with a centre of symmetry. There are eleven centrosymmetric point groups and hence, eleven symmetries which \\diffraction patterns can possess. These are called the eleven \bfnt{Laue groups}. Only Laue groups can be distinguished from an X-ray diffraction pattern. Thus, the phase information in the structure factor is lost when we measure intensity of the diffracted beam.
 
 %******************************************************************************************************
 
@@ -410,4 +410,4 @@ This the vector form of Bragg's Law.
 %	
 	where $\beta$ is the full width of the Bragg peak at half the maxima (FWHM), and $K$ is often referred \cite{Klug1974} to as the crystallite shape factor. $K$ depends \cite{Holzwarth2011} on the crystallite shape, the definitions of average crystallite size and width. The structure of Scherrer equation is not affected by these, but the numerical value of $K$ can change appreciably. In the absence of detailed information about the shape of the crystal, $K = 0.9$ is a good approximation.
 	
-	The Scherrer equation becomes particularly useful when studying nanostructures because peak broadening becomes significant \cite{AkankshaUrade2023} when the crystallite size drops to $50-25~\si{nm}.$ At around $\SI{10}{nm},$ peak intensities become weak, and peak broadening becomes significant as peaks often overlap with each other, making it difficult to index and analyze the data.
+	The Scherrer equation becomes particularly useful when studying nanostructures because peak broadening becomes significant \cite{AkankshaUrade2023} when the crystallite size drops to $50-25~\si{nm}.$ At around $\SI{10}{nm},$ peak intensities become weak, and peak broadening becomes significant as peaks frequently overlap with each other, making it difficult to index and analyze the data.
