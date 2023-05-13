@@ -3,6 +3,8 @@
 At the time of writing this project, I am a student in the Department of Physics in Scottish Church College, Kolkata, India, pursuing the B.Sc. Physics (Honours) program under the University of Calcutta.
 I will be submitting this project for the *tutorial* portion in the Discipline Specific Elective course "Nano materials and Applications" in Semester 6.
 
+**Update:** The projected has been formally submitted on 12 May 2023.
+
 ## Please note:
 
  - This is a project and **not** a B.Sc. thesis or dissertation.
@@ -29,7 +31,7 @@ To compile the PDF, please follow these steps:
     - `biber` ✕  1
     - `LuaLaTeX` ✕  3 (or 4)
 
-Building a proper bibliography requires at least two compilations with `LaTeX` after running `biber`. A third iteration is necessary to properly compile the `tikz` diagrams. A fourth iteration may be needed if there are green lines on some pages.
+Building a proper bibliography requires at least two compilations with `LaTeX` after running `biber`. A third iteration is necessary to properly compile the `tikz` diagrams. A fourth iteration may be needed if there are spurious green lines on some pages.
 
 ## License
 
